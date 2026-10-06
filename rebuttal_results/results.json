@@ -1,0 +1,27 @@
+{
+  "CR-A": 54.40,
+  "SCS-A": 0.0,
+  "CAM-A": 17598.80,
+  "R-A": 44.15,
+  "mR-A": 11.39,
+  "CR-B": 45.92,
+  "SCS-B": 0.0,
+  "CAM-B": 15830.75,
+  "R-B": 42.21,
+  "mR-B": 10.82,
+  "CR-C": 4.07,
+  "SCS-C": 0.0,
+  "CAM-C": 14513.30,
+  "R-C": 35.18,
+  "mR-C": 10.36,
+  "wc_check": {
+    "A": 44.15,
+    "B": 42.21,
+    "C": 35.18
+  },
+  "scs_K": 20,
+  "control_lambda0_R20_per_epoch": [39.79, 37.04, 42.20, 42.21],
+  "warmstart_estart2_R20_per_epoch": [35.15, 35.15, 35.18, 35.18],
+  "warmstart_estart2_CR": 4.07,
+  "warmstart_estart2_SCS": 0.0
+}
