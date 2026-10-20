@@ -112,6 +112,11 @@ cd ../../../
 cd lib/draw_rectangles
 python setup.py build_ext --inplace
 cd ../../
+
+# 3. Build Faster R-CNN CUDA/C++ extensions
+cd fasterRCNN/lib
+python setup.py build develop
+cd ../../
 ```
 
 ---
@@ -122,11 +127,19 @@ Because pretrained checkpoints and model weights exceed GitHub's file storage li
 
 ### 1. Faster R-CNN Feature Backbone
 - **File:** `faster_rcnn_ag.pth` (~362 MB)
-- **Download Link:** [Box Download](https://utdallas.box.com/s/1pspm5x8etlczoklyw4bclotsmlejagj)
+- **Download Link:** [Box Download (Official)](https://utdallas.box.com/s/1pspm5x8etlczoklyw4bclotsmlejagj)
 - **Destination:** Place in `fasterRCNN/models/faster_rcnn_ag.pth`
+*(Note: Download instructions are also documented inside `fasterRCNN/models/model.txt`)*
 
-### 2. Pretrained Model Checkpoints
-Download checkpoints from the shared repository and organize them inside `checkpoints/`:
+### 2. CoupledSGA Model Checkpoints (Ours)
+Download our trained checkpoints for reproduction and place them inside `checkpoints/`:
+- **Model C (CoupledSGA with $\mathcal{L}_{\mathrm{SC}}$, $\lambda=0.1$):** `checkpoints/model_c_sc/model_c_sc_epoch_3.tar`
+- **Model B (CoupledSGA unregularized, $\lambda=0$):** `checkpoints/model_b_nosc/model_b_nosc_epoch_3.tar`
+- **Model A (Baseline SceneSayer ODE):** `checkpoints/ode_predcls_future_5/ode_predcls_future_5_epoch_3.tar`
+- **Download Link:** [Google Drive Download Link](https://drive.google.com/) *(Add your shareable Google Drive link here)*
+
+### 3. Baseline SGA Checkpoints (Prior Work)
+Download baseline checkpoints from the SceneSayer repository and organize them inside `checkpoints/`:
 - **Action Genome Scenes (AGS / sgdet):** [Download Link](https://utdallas.box.com/s/xaf2ifdla5y1qm7prh175d6e3t3yoz79)
 - **Partially Grounded Action Genome Scenes (PGAGS / sgcls):** [Download Link](https://utdallas.box.com/s/qomw52816xiylln15j64nfj5lhg7d56t)
 - **Grounded Action Genome Scenes (GAGS / predcls):** [Download Link](https://utdallas.box.com/s/py5yt40pt3bokqbyx7wc0o2imzn3j5tq)
