@@ -136,7 +136,7 @@ Download our trained checkpoints for reproduction and place them inside `checkpo
 - **Model C (CoupledSGA with $\mathcal{L}_{\mathrm{SC}}$, $\lambda=0.1$):** `checkpoints/model_c_sc/model_c_sc_epoch_3.tar`
 - **Model B (CoupledSGA unregularized, $\lambda=0$):** `checkpoints/model_b_nosc/model_b_nosc_epoch_3.tar`
 - **Model A (Baseline SceneSayer ODE):** `checkpoints/ode_predcls_future_5/ode_predcls_future_5_epoch_3.tar`
-- **Download Link:** [Google Drive Download Link](https://drive.google.com/) *(Add your shareable Google Drive link here)*
+- **Download Link:** [Google Drive Download Link](https://drive.google.com/drive/folders/1ldT7Vh0itc9cXMML3QpQ7G7IuF2JNQ7h?usp=sharing)
 
 ### 3. Baseline SGA Checkpoints (Prior Work)
 Download baseline checkpoints from the SceneSayer repository and organize them inside `checkpoints/`:
