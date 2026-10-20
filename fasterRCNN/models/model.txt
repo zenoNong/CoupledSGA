@@ -1,1 +1,5 @@
- 
+Download the pre-trained Faster R-CNN model on Action Genome (`faster_rcnn_ag.pth`) from:
+https://utdallas.box.com/s/1pspm5x8etlczoklyw4bclotsmlejagj
+
+Once downloaded, place `faster_rcnn_ag.pth` in this directory:
+fasterRCNN/models/faster_rcnn_ag.pth
